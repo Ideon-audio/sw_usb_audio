@@ -235,9 +235,9 @@ pipeline {
               archiveArtifacts artifacts: "${REPO}/tests/tools/hardware_test_tools/xsig/glitch.*.csv", fingerprint: true, allowEmptyArchive: true
               junit "${REPO}/tests/pytest_result_windows10.xml"
             }
-            //cleanup {
-            //  xcoreCleanSandbox()
-            //}
+            cleanup {
+              xcoreCleanSandbox()
+            }
           }
         }  // Windows 10
       }
