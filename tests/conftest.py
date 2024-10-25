@@ -218,8 +218,6 @@ class AppUsbAudDut(UaDut):
         else:
             winbuiltin = False
 
-        winbuiltin = True
-
         if platform.system() == "Windows" and not winbuiltin:
             prod_str = "XMOS USB Audio Device"
         elif board == "xk_216_mc":
