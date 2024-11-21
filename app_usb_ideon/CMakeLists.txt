@@ -52,6 +52,7 @@ set(SW_USB_AUDIO_FLAGS ${EXTRA_BUILD_FLAGS} -O3
 set(APP_COMPILER_FLAGS_2AMxo2xxxxxd ${SW_USB_AUDIO_FLAGS}  
                                                        #     -DMAX_FREQ=192000
                                                        #     -DXUA_PCM_FORMAT=XUA_PCM_FORMAT_I2S
+                                                       -DVENDOR_STR="IDEON TECHNOLOGIES"
                                                        -DNATIVE_DSD
                                                        -DDSD_CHANS_DAC=2                
                                                        -DNUM_USB_CHAN_OUT=2     # Number of channels from host to device 
